@@ -8,27 +8,24 @@
 
 import Foundation
 
-struct ElementAPIClient {
+struct CountryAPIClient {
     
     // MARK: - Static Properties
     
-    static let manager = ElementAPIClient()
+    static let manager = CountryAPIClient()
     
     // MARK: - Instance Methods
     
-    static func getElementLargeImageURLString(from name: String) -> String {
-        return "http://images-of-elements.com/\(name.lowercased()).jpg"
-    }
     
-    func getElements(completionHandler: @escaping (Result<[Element], AppError>) -> ())  {
-        NetworkHelper.manager.performDataTask(withUrl: elementURL, andMethod: .get) { (results) in
+    func getCountry(completionHandler: @escaping (Result<[Country], AppError>) -> ())  {
+        NetworkHelper.manager.performDataTask(withUrl: countryURL, andMethod: .get) { (results) in
             switch results {
             case .failure(let error):
                 completionHandler(.failure(error))
             case .success(let data):
                 do {
-                    let elementInfo = try Element.decodeElementsFromData(from: data)
-                    completionHandler(.success(elementInfo))
+                    let countryInfo = try Country.decodeCountryFromData(from: data)
+                    completionHandler(.success(countryInfo))
                 }
                 catch {
                     completionHandler(.failure(.couldNotParseJSON(rawError: error)))
@@ -40,7 +37,7 @@ struct ElementAPIClient {
     
     
     // MARK: - Private Properties and Initializers
-    private var elementURL: URL {
+    private var countryURL: URL {
         guard let url = URL(string: "https://5c1d79abbc26950013fbcaa9.mockapi.io/api/v1/elements") else {
             fatalError("Error: Invalid URL")
         }
