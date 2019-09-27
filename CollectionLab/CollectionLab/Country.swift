@@ -20,4 +20,11 @@ struct Country: Codable {
         return response
     }
     
+    func getIMGurl(code: String) -> String {
+       return "https://www.countryflags.io/\(code)/shiny/64.png"
+        
+        
+   
+    }
+    
 }

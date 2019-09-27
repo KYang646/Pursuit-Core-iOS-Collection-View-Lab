@@ -38,7 +38,7 @@ struct CountryAPIClient {
     
     // MARK: - Private Properties and Initializers
     private var countryURL: URL {
-        guard let url = URL(string: "https://5c1d79abbc26950013fbcaa9.mockapi.io/api/v1/elements") else {
+        guard let url = URL(string: "https://restcountries.eu/rest/v2/") else {
             fatalError("Error: Invalid URL")
         }
         return url

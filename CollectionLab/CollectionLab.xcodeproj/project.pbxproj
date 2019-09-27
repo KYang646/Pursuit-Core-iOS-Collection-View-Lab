@@ -113,9 +113,9 @@
 			children = (
 				749E8A78233D738800C4E09C /* Network */,
 				749E8A46233D711B00C4E09C /* AppDelegate.swift */,
+				749E8A4A233D711B00C4E09C /* ViewController.swift */,
 				749E8A48233D711B00C4E09C /* SceneDelegate.swift */,
 				749E8A83233D7A6100C4E09C /* Country.swift */,
-				749E8A4A233D711B00C4E09C /* ViewController.swift */,
 				749E8A4C233D711B00C4E09C /* Main.storyboard */,
 				749E8A81233D773300C4E09C /* flagCollectionViewCell.swift */,
 				749E8A4F233D711D00C4E09C /* Assets.xcassets */,
