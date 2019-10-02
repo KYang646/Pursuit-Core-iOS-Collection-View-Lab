@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7490CB7E23418D4A002573C3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7490CB7D23418D4A002573C3 /* DetailViewController.swift */; };
 		749E8A47233D711B00C4E09C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E8A46233D711B00C4E09C /* AppDelegate.swift */; };
 		749E8A49233D711B00C4E09C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E8A48233D711B00C4E09C /* SceneDelegate.swift */; };
 		749E8A4B233D711B00C4E09C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749E8A4A233D711B00C4E09C /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7490CB7D23418D4A002573C3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		749E8A43233D711B00C4E09C /* CollectionLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		749E8A46233D711B00C4E09C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		749E8A48233D711B00C4E09C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				749E8A48233D711B00C4E09C /* SceneDelegate.swift */,
 				749E8A83233D7A6100C4E09C /* Country.swift */,
 				749E8A4C233D711B00C4E09C /* Main.storyboard */,
+				7490CB7D23418D4A002573C3 /* DetailViewController.swift */,
 				749E8A81233D773300C4E09C /* flagCollectionViewCell.swift */,
 				749E8A4F233D711D00C4E09C /* Assets.xcassets */,
 				749E8A51233D711D00C4E09C /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 				749E8A7F233D73A400C4E09C /* AppError.swift in Sources */,
 				749E8A4B233D711B00C4E09C /* ViewController.swift in Sources */,
 				749E8A47233D711B00C4E09C /* AppDelegate.swift in Sources */,
+				7490CB7E23418D4A002573C3 /* DetailViewController.swift in Sources */,
 				749E8A49233D711B00C4E09C /* SceneDelegate.swift in Sources */,
 				749E8A80233D73A400C4E09C /* ImageHelper.swift in Sources */,
 			);
